@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+ 
+ 
+  
+<servlet>
+
+<servlet-name>SearchServlet</servlet-name>
+<servlet-class>com.SearchServlet</servlet-class>
+</servlet> 
+ 
+ <servlet-mapping>
+ <servlet-name>SearchServlet</servlet-name>
+ <url-pattern>/SearchServlet</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+
+<servlet-name>viewdetails1</servlet-name>
+<servlet-class>com.BookViewDetailsServlet</servlet-class>
+</servlet> 
+ 
+ <servlet>
+
+<servlet-name>showcart1</servlet-name>
+<servlet-class>com.ShowCartServlet</servlet-class>
+</servlet> 
+ 
+  <servlet>
+
+<servlet-name>remove1</servlet-name>
+<servlet-class>com.RemoveBookServlet</servlet-class>
+</servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>viewdetails1</servlet-name>
+ <url-pattern>/viewdetails</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet-mapping>
+ <servlet-name>showcart1</servlet-name>
+ <url-pattern>/showcart</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ <servlet-mapping>
+ <servlet-name>remove1</servlet-name>
+ <url-pattern>/remove</url-pattern>
+ </servlet-mapping>
+ 
+ 
+</web-app>
+
+</element>
